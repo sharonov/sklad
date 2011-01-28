@@ -1,0 +1,16 @@
+.bundle
+db/*.sqlite3
+*.log
+log/*.log
+tmp/*
+tmp/**/*
+.idea
+.idea/*
+.idea/*.xml
+.idea/**
+.idea/**/*
+config/database.yml
+doc/api
+doc/app
+*.swp
+*~
