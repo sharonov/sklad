@@ -1,4 +1,4 @@
-#Applicacion for laboratory catalog management
+#Application for laboratory catalog management
 
 <ul><b>TODO:</b>
 <li>add, edit, remove items</li>
