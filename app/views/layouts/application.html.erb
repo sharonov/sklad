@@ -4,16 +4,28 @@
   <title>Sklad</title>
 
   <%= csrf_meta_tag %>
-
-  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-  <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
-  <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-  <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+  <%= render 'layouts/stylesheets' %>
 
 </head>
 <body>
+    <div class="container showgrid">
+        <div class="span-12">
+          <h1>Login menu</h1>
+        </div>
 
-<%= yield %>
+        <div class="span-12 last">
+          <h1>Search</h1>
+        </div>
 
+        <div class="span-8">
+          <%=render 'layouts/menu'%>
+        </div>
+
+        <div class="span-16 last">
+           <h1>Main window</h1>
+            <%= yield %>
+        </div>
+
+     </div>   
 </body>
 </html>
