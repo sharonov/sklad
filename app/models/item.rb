@@ -5,6 +5,6 @@ acts_as_nested_set
   belongs_to :user
   has_many :comments
 
-  validates :head
+  validates :head, :presence => true
 
 end

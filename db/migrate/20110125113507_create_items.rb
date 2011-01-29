@@ -14,6 +14,7 @@ class CreateItems < ActiveRecord::Migration
       t.timestamp :last_commented #this timestamp will be the date of last comment
 
       t.boolean :extendable
+      t.boolean :commentable
       t.integer :manufacturer_id
       t.string :cat_num
       t.integer :status_id

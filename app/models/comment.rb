@@ -1,5 +1,5 @@
 class Comment < ActiveRecord::Base
   belongs_to :item
   belongs_to :user
-  validates :body
+  validates :body, :presence => true
 end
