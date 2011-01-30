@@ -5,6 +5,8 @@ class CreateGroups < ActiveRecord::Migration
 
       t.timestamps
     end
+      Group.create  :id => 1,
+                    :name => "Administrators"
   end
 
   def self.down

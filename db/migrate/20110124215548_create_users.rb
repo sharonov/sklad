@@ -7,6 +7,10 @@ class CreateUsers < ActiveRecord::Migration
 
       t.timestamps
     end
+      User.create :id => 1,
+                  :name => "admin",
+                  :email => "admin@sklad.com",
+                  :group_id => 1
   end
 
   def self.down
