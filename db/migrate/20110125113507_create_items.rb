@@ -25,6 +25,12 @@ class CreateItems < ActiveRecord::Migration
                 :user_id => 1,
                 :commentable => false,
                 :branch => true
+    Item.create :head => "Antibodies",
+                :body => "Antibodies body",
+                :parent_id => 1,
+                :user_id => 1,
+                :commentable => true,
+                :branch => true
   end
 
   def self.down
