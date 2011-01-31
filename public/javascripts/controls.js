@@ -28,7 +28,7 @@
 // Tokenized incremental autocompletion is enabled automatically
 // when an autocompleter is instantiated with the 'tokens' option
 // in the options parameter, e.g.:
-// new Ajax.Autocompleter('id','upd', '/url/', { tokens: ',' });
+// create Ajax.Autocompleter('id','upd', '/url/', { tokens: ',' });
 // will incrementally autocomplete with a comma as the token.
 // Additionally, ',' in the above example can be replaced with
 // a token array, e.g. { tokens: [',', '\n'] } which
@@ -851,7 +851,7 @@ Ajax.InPlaceCollectionEditor = Class.create(Ajax.InPlaceEditor, {
 
 //**** DEPRECATION LAYER FOR InPlace[Collection]Editor! ****
 //**** This only  exists for a while,  in order to  let ****
-//**** users adapt to  the new API.  Read up on the new ****
+//**** users adapt to  the create API.  Read up on the create ****
 //**** API and convert your code to it ASAP!            ****
 
 Ajax.InPlaceEditor.prototype.initialize.dealWithDeprecatedOptions = function(options) {

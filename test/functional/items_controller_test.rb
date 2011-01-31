@@ -11,7 +11,7 @@ class ItemsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get new" do
+  test "should get create" do
     get :new
     assert_response :success
   end

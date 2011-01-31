@@ -1,2 +1,22 @@
 <h1>Item#index</h1>
 <p>Find me in app/views/item/index.html.erb</p>
+<p><%=flash[:notice]%></p>
+<table>
+  <thead>
+    <tr>
+    <th class="span-3">Branch</th>
+    <th class="span-8">Name</th>
+    <th class="span-3">Owner</th>
+    <th class="span-2 last">Updated</th>
+    </tr>
+  </thead>
+  <% @items.each do |i| %>
+    <tr>
+      <td><%= link_to Item.find(i.parent_id||1).head, :id=> i.parent_id %></td>
+      <td><%=i.head %></td>
+      <td><%=User.find(i.user_id).name %></td>
+      <td><%=i.updated_at.strftime("%m/%d/%Y") %></td>
+    </tr>
+  <% end %>
+</table>
+<%=button_to("New branch", :action => "create", :parent_id => @parent_id, :user=>1, :branch=>true) %> }, :method => 'get') %>
